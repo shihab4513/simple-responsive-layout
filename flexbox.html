@@ -3,9 +3,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>FlexBox</title>
+    <style>
+        .container{
+            border: 2px solid salmon;
+            display: flex;
+            /* justify-content: flex-end; */
+            /* justify-content: center; */
+            /* justify-content: space-between; */
+            /* justify-content: space-evenly; */
+            /* justify-content: space-around; */
+            height: 250px;
+            /* align-items: flex-end; */
+            /* align-items: center; */
+            /* Flex direction normally by default its directed towards row but we can set it intro  column directive */
+            /* flex-direction: column; */
+            flex-direction: column-reverse;
+
+
+        }
+        .box{
+            width: 50px;
+            height: 50px;
+            border: 2px dashed tomato;
+            
+        }
+    </style>
 </head>
 <body>
-    
+    <h1>FlexBox Layout</h1>
+    <div class="container">
+        <div class="box">Box-1</div>
+        <div class="box">Box-2</div>
+        <div class="box">Box-3</div>
+    </div>
 </body>
 </html>
